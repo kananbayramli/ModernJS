@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // const msj = ["menim", "adim", "Kanan", "Bayram"];
+        // let result = "";
+
+        // for(let x of msj){
+        //     result += x + " ";
+        // }
+        // console.log(result);
+        // console.log(...msj); //yuxarida gorduyumuz iwin eynisi
+
+        // const arr1 = ["one", "two"];
+        // const arr2 = ["three", "four"];
+        // const arr3 = [...arr1, ...arr2, "five", "six"];  //belelikle butun arraylerdeki elementleri bir array icinde tanitdig
+        // console.log(arr3);
+
+
+
+        // const nums = [1,2,3];
+        // //const nums1 = nums;  //referans copy 
+        // const nums1 = [...nums];  //value copy 
+        // nums[0] = 10;
+        // console.log(nums, nums1);
+        
+
+        // const user = {
+        //     username : "kenanbayram",
+        //     email : "kenan@gmail.com"
+        // };
+
+        // const address = {
+        //     username : "kenan",  // birinci yaratdigimiz  memberi ezecek
+        //     city : "Baku"
+        // };
+        // console.log({...user, ...address});  //vahid bir obyekt yaratdiq
+
+
+
+        //rest parameters
+        // function toplam(...args){
+        //     let result = 0;
+
+        //     for(let num of args){
+        //         result += num;
+        //     }
+        //     return result;
+        // }
+
+        // console.log(toplam(1,2,3));
+        // console.log(toplam(1,2,3,7,4,29));  //belelikle metoda istediyimiz qeder parametr yollaya bilerik
+
+
+
+        function showInfo(ad, soyad, ...adress){
+            console.log(ad, soyad, adress);
+        }
+
+        showInfo("kenan", "bayram", "Baku", "Bakikhanov");
+
+    </script>
+</body>
+</html>
