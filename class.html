@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        //function constructor
+        function PersonES5(name, work, birthDate){
+            this.name = name;
+            this.work = work;
+            this.birthDate = birthDate;
+        }
+
+        PersonES5.prototype.yashHesabla = function(){
+            let date = new Date().getFullYear();
+            return date - this.birthDate;
+        }
+
+        let ken = new PersonES5("kenan bayram", "developer", 1995);
+        console.log(ken.yashHesabla());
+
+        // class
+        class PersonES6{
+            constructor(name, work, birthDate){
+                this.name = name;
+                this.work = work;
+                this.birthDate = birthDate;
+                console.log("object created");
+            }
+
+            yasHesablaclss(){
+                let date = new Date().getFullYear();
+                return date - this.birthDate;
+            }
+        }
+
+        let person1 = new PersonES6("kenan","developer", 1995);
+        console.log(person1.yasHesablaclss());
+
+
+    </script>
+</body>
+</html>
