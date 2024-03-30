@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        //array destructuring
+        let user = ["kenan", "bayram", "baki", "bakixanov", "27a"];
+
+        //let firstname = user[0];
+        //let lastname = user[1];
+        //daha sade etsek bele olar
+        //let [firstname, lastname] = user;
+        //let [firstname, lastname] = "Kanan Bayram".split(" ");
+        
+        let [firstname, lastname, ...adress] = user
+        console.log(firstname, lastname, adress);
+
+
+        //object destructuring
+
+        let product = {
+            mark : "Apple",
+            model : "iphone 12",
+            price : "2000"
+        };
+
+        function showProduct(obj){
+            let {mark, model, price = 0, stock = false} = obj;  //defaulr price 0
+            console.log(model, mark, stock);  //function icinde siralama onemi yoxdur
+        }
+
+        showProduct(product);
+
+
+
+    </script>
+</body>
+</html>
